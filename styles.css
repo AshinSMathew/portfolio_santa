@@ -69,17 +69,18 @@
     font-size: 60px;
   }
   .semicircle {
-    width: 100%;
-    height: 50vh;
+    width: 50vw; /* Use 100% of the viewport width */
+    height: 25vw; /* Set height to 50% of the viewport width (maintains aspect ratio) */
     background-color: #116600;
-    border-top-left-radius: 500px;
-    border-top-right-radius: 500px;
+    border-top-left-radius: 50vw; /* Use 50% of the width to make it fully rounded */
+    border-top-right-radius: 50vw; /* Same as above */
     position: absolute;
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
     z-index: -1;
 }
+
   .image-container {
     position: relative;
     display: flex;
