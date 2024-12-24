@@ -1,15 +1,16 @@
-document.addEventListener('DOMContentLoaded', () => {
-  // Select all navbar links
-  const navLinks = document.querySelectorAll('.nav-link');
+// Function to hide the navbar on mobile devices
+function toggleNavbar() {
+  const navbar = document.querySelector('.navbar');
+  
+  if (window.innerWidth <= 768) { // Check if the window width is 768px or smaller (mobile view)
+      navbar.style.display = 'none'; // Hide navbar on mobile
+  } else {
+      navbar.style.display = 'flex'; // Show navbar for larger screens
+  }
+}
 
-  // Add event listener for clicks on each link
-  navLinks.forEach(link => {
-    link.addEventListener('click', function () {
-      // Remove 'active' class from all links
-      navLinks.forEach(nav => nav.classList.remove('active'));
+// Event listener to check window resize
+window.addEventListener('resize', toggleNavbar);
 
-      // Add 'active' class to the clicked link
-      this.classList.add('active');
-    });
-  });
-});
+// Call the function initially to set the navbar state on page load
+toggleNavbar();
