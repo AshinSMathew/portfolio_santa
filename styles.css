@@ -1,0 +1,578 @@
+/* General Reset */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Urbanist";
+    color: #333;
+    scroll-behavior: smooth;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+  }
+  
+  /* Navbar */
+  .navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  padding: 15px 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+.navbar li a:hover {
+  background-color: #444;
+}
+
+.navbar li a.active {
+  background-color: #116600; /* Dark Green */
+  color: #fff;
+}
+
+  
+
+
+
+  /*Home*/
+  #home{
+    justify-content: center;
+    text-align: center;
+    padding-top: 75px;
+    font-size: 25px;
+  }
+  #home h1{
+    font-size: 60px;
+  }
+  .semicircle {
+    width: 812px;
+    height: 406px;
+    background-color: #116600;
+    border-top-left-radius: 500px; 
+    border-top-right-radius: 500px;
+    position: absolute;
+    left: 125%;
+    top: 60%; 
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+  .image-container{
+    position: relative;
+    display: flex;
+    max-width: 600px;
+    max-height: 600px;
+    z-index: 1;
+  }
+  .image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    left: 75%;
+  }
+
+
+  /*About*/
+  #about {
+    padding: 75px;
+    text-align: center;
+    background-color: #f0f4f8;
+  }
+  #about h2 {
+    font-size: 64px;
+    text-align: top;
+  }
+  #about h2 .highlight {
+    color: #116600;
+  }
+  .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .about-text {
+    flex: 1;
+    text-align: left;
+  }
+  .about-text p {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #344054;
+  }
+  .about-text .btn {
+    margin-top: 15px;
+  }
+  .santa-image {
+    flex: 1;
+    width: 300px;
+    height: auto;
+    animation: float 3s ease-in-out infinite;
+    position:relative;
+  }
+
+
+  /* Skills Section Styling */
+  .skills-section {
+    background-image: url('assets/background.jpeg'), linear-gradient(#171717, #171717);
+    background-blend-mode: overlay;
+    width: 1515px;
+    height: 700px;
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
+  }
+  .skills-section h2{
+    color: white;
+    font-size: 48px;
+    font-family: 'Urbanist';
+  }
+  .highlight {
+    color: red;
+  }
+  .skills-description {
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: #e0e0e0;
+  }
+  .skills-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .skill-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    width: 300px;
+    height:400px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  .skill-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+  }
+  .skill-content {
+    padding: 15px;
+  }
+  .skill-content h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  .navigate-button {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  .navigate-button:hover {
+    background: #1e7a36;
+  }
+
+
+  /*Achievements*/
+  .achievements-section {
+    padding: 50px;
+    background-color: #FFE9E9;
+    font-family: 'Acme';
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .container h2{
+    color: #333;
+    font-size: 48px;
+  }
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  .achievements-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 1000%;
+  }
+  .achievement-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    flex: 1;
+    text-align: left;
+    font-weight: lighter;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .achievement-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  .achievement-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  .achievement-card h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: lighter;
+  }
+  .achievement-card .date {
+    font-size: 20px;
+    color: #344054;
+    margin-bottom: 10px;
+    font-family: 'Urbanist';
+  }
+  .achievement-card .description {
+    font-size: 23px;
+    color: #344054;
+    font-family: 'Urbanist';
+  }
+
+
+
+  /*Projects*/
+  #projects {
+    padding: 50px;
+    background-color: #c4c4c4;
+    font-family: 'Urbanist';
+  }
+  .projects-title {
+    margin-top: 5px;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+    font-family: 'Playfair Display';
+    font-size: 48px;
+    color: #25282B;
+    text-align: center;
+  }
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .project-text {
+    flex: 1;
+    padding-right: 50px;
+  }
+  .project-text h3 {
+    margin: 0 0 10px;
+    font-size: 40px;
+    color: #25282B;
+    font-family: 'Playfair Display';
+  }
+  .project-text p {
+    margin: 0 0 15px;
+    color: #555;
+    font-size: 18px;
+  }
+  .project-text .btn {
+    text-decoration: none;
+    padding: 10px 15px;
+    background: #116600;
+    color: #fff;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  .project-text .btn:hover {
+    background: #0e5500;
+  }
+  .project-image {
+    flex: 0 0 auto;
+    width: 300px;
+  }
+  .project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .project-image-odd{
+    padding-right: 40px;
+  }
+
+
+  /* Testimonials Section */
+  .testimonials-section {
+    background-image: url('assets/background.jpeg'), linear-gradient(#171717, #171717);
+    background-blend-mode: overlay;
+    width: 1515px;
+    height: 700px;
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
+  }
+  .testimonials-title {
+    font-family: 'Urbanist';
+    font-size: 36px;
+    font-weight: lighter;
+  }
+  .testimonials-title .highlight {
+    color: #e63946;
+  }
+  .testimonials-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    gap: 20px;
+    justify-content: center;
+    transition: transform 0.6s ease-in-out;
+  }
+  .testimonial {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin-top: 30px;
+  }
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  .profile h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  .rating {
+    font-size: 16px;
+    color: #ffcc00;
+  }
+  blockquote {
+    font-style: italic;
+    color: #ddd;
+  }
+  .testimonial-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .arrow {
+    background: #e63946;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: transform 0.2s ease-in-out;
+  }
+  .arrow:hover {
+    transform: scale(1.1);
+  }
+  .arrow:focus {
+    outline: none;
+  }
+
+
+  /*Contact*/
+  .footer-container {
+    background-color: #171717;
+    color: #fff;
+    padding: 50px;
+    position: relative;
+  }
+  
+  .footer-title {
+    font-size: 36px;
+    font-family: 'Urbanist', sans-serif;
+    text-align: center;
+  }
+  
+  .footer-subtitle {
+    font-size: 18px;
+    text-align: center;
+    margin: 10px 0 30px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .social-links {
+    text-align: center;
+  }
+  
+  .social-links a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #ffa500;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .footer-links div {
+    flex: 1;
+  }
+  
+  .footer-links h3 {
+    color: #ffa500;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links ul li a:hover {
+    color: #ffa500;
+  }
+  
+  .footer-links p a {
+    color: #ffa500;
+    text-decoration: none;
+  }
+  
+  .latest-info form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .latest-info input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+  }
+  
+  .latest-info button {
+    background-color: #ffa500;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .footer-bottom a {
+    color: #ffa500;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  .hire-me-button {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background-color: #ffa500;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hire-me-button:hover {
+    background-color: #ff8800;
+  }
+  
