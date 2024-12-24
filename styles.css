@@ -65,7 +65,7 @@
 
   /*Home*/
   #home{
-    justify-content: center;
+    /* justify-content: center; */
     text-align: center;
     padding-top: 75px;
     font-size: 25px;
@@ -80,23 +80,27 @@
     border-top-left-radius: 500px; 
     border-top-right-radius: 500px;
     position: absolute;
-    left: 125%;
-    top: 60%; 
-    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
     z-index: -1;
   }
-  .image-container{
+  .image-container {
     position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 600px;
     max-height: 600px;
+    margin: auto;
     z-index: 1;
   }
-  .image-container img {
-    max-width: 100%;
-    max-height: 100%;
-    left: 75%;
-  }
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 
 
   /*About*/
@@ -446,7 +450,7 @@
   .footer-container {
     background-color: #171717;
     color: #fff;
-    padding: 50px;
+    padding: 50px 20px;
     position: relative;
   }
   
