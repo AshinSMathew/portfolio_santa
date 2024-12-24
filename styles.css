@@ -143,16 +143,20 @@
   }
 
 
-  /* Skills Section Styling */
+  /* Skills */
   .skills-section {
     background-image: url('assets/background.jpeg'), linear-gradient(#171717, #171717);
     background-blend-mode: overlay;
-    width: 1515px;
-    height: 700px;
+    width: 100%;
+    max-width: 1515px;
+    height: auto;
     padding: 50px 20px;
     text-align: center;
     color: #fff;
+    margin-left: 0;
+    margin-right: auto;
   }
+
   .skills-section h2{
     color: white;
     font-size: 48px;
