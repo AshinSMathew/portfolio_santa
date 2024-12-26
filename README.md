@@ -46,3 +46,7 @@ Santa's transition into this role involves:
 Check out Santa's portfolio live: https://portfolio-santa.vercel.app/
 
 ---
+
+## 👥 Contributors  
+
+- **[Ann Maria Jaison](https://github.com/Ann-Maria-Jaison)**: Website Designer
