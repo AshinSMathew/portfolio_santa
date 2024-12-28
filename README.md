@@ -25,7 +25,8 @@ Santa has left his cozy North Pole workshop to become a **Global Logistics Manag
 
 ## 🚀 Technologies Used  
 
-- **Frontend**: HTML, CSS 
+- **Frontend**: HTML, CSS
+- **Designing**: Figma
 - **Hosting**: Vercel  
 - **Version Control**: Git  
 
