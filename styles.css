@@ -68,8 +68,8 @@
     font-size: 60px;
   }
   .semicircle {
-    width: 50vw;
-    height: 50vh;
+    width: 75vw;
+    height: 25vh;
     background-color: #116600;
     border-top-left-radius: 50vw;
     border-top-right-radius: 50vw;
