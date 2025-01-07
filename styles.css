@@ -69,7 +69,7 @@
   }
   .semicircle {
     width: 50vw;
-    height: 50%;
+    height: 50vh;
     background-color: #116600;
     border-top-left-radius: 50vw;
     border-top-right-radius: 50vw;
